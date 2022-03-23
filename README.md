@@ -134,10 +134,6 @@ http://localhost:3000/
 #Obs: Caso queira popular o banco de dados, execute o comando:
 $ npm run seed
 
-# Para rodar os testes automatizados use os seguintes comandos:
-$ npm install -g win-node-env (caso esteja utilizando Windows)
-$ npm run test
-
 ```
 
 ### Ou acesse a aplicação:
