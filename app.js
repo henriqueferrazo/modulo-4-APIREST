@@ -2,7 +2,7 @@ const express = require('express')
 const { Franquia } = require('./src/models/models.js')
 const sequelize = require('./src/database/conect.js')
 const app = express()
-const port = 3000;
+const port = 3333;
 app.use(express.json())
 
 app.get("/", (req, res) => {
@@ -20,4 +20,3 @@ async function sicronizar(){
 
 
 sicronizar()
-

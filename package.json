@@ -5,17 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./app.js",
-    "dev":"nodemon ./app.js"
+    "dev": "nodemon ./app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.0.1",
-    "dotenv": "^16.0.0",
+    "config.js": "^0.1.0",
+    "dotenv-safe": "^8.2.0",
     "express": "^4.17.3",
-    "path": "^0.12.7",
     "sequelize": "^6.17.0",
-    "sequelize-cli": "^6.4.1",
     "sqlite3": "^5.0.2"
   },
   "devDependencies": {
