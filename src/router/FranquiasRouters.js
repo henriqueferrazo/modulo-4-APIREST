@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 
-const FranquiasController = require("../controllers/controler.js")
+const FranquiasController = require("../controllers/Controler.js")
 
 
 router.post('/registrar', FranquiasController.create)

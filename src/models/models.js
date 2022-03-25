@@ -3,32 +3,32 @@ const { DataTypes } = require('sequelize')
 
 
 const Franquias = Sequelize.define('Franquias',{
-    Gestor:{
+    gestor:{
         type:DataTypes.STRING,
         allowNull:false
     },
-    Endereco:{
+    endereco:{
         type:DataTypes.STRING,
         allowNull: false,
     },
-    Estado:{
+    estado:{
         type:DataTypes.STRING,
         allwNull: false
     },
-    Cidade:{
+    cidade:{
         type:DataTypes.STRING,
         allowNull: false
     },
-    CEP:{
+    cep:{
         type:DataTypes.NUMBER,
         allowNull: false
     },
-    Tem_Piscina:{
-        type:DataTypes.BOOLEAN,
+    tem_piscina:{
+        type:DataTypes.STRING,
         allowNull:false
     },
-    Academia:{
-        type:DataTypes.BOOLEAN,
+    tem_academia:{
+        type:DataTypes.STRING,
         allowNull: false
     }
 

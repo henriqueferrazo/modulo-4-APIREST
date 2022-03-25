@@ -59,7 +59,7 @@ class FranquiasController {
                 message: 'Todos os campos precisam ser preenchidos!'
             })
         }
-        const franquiasExists = await franquiasModels.findOnel({ where: { cpf: cpf } })
+        const franquiasExists = await franquiasModels.findOne({ where: { cep : cep } })
 
         if (franquiasExists) {
             return res.status(401).json({

@@ -45,21 +45,19 @@ Nesta aplicação é possível cadastrar, listar, atualizar e deletar franquias.
 
 <b>[GET] </b> /franquias - A rota deve exibir todos os franquias cadastrados.<br>
 
-<b>[GET] </b> /franquias/:id - A rota deve listar um cliente baseado em seu ID.<br>
+<b>[GET] </b> /franquias/:id - A rota deve listar um franquias baseado em seu ID.<br>
 
-<b>[POST] </b> /franquias/create - A rota deve cadastrar um cliente com as informações passadas no body da requisição.<br>
+<b>[POST] </b> /franquias/create - A rota deve cadastrar uma franquia com as informações passadas no body da requisição.<br>
 
 ```javascript
 {
-"primeiroNome": "Teste",
-"sobrenome": "Teste",
-"cpf": "16340645861",
-"email": "teste@email.com",
-"telefone": "16912345678",
-"quarto": 100,
-"formaPagamento": "crédito",
-"checkIn": "22/11/2022",
-"checkOut": "23/11/2022"
+"gestor": "Teste",
+"endereco": "Teste",
+"estado": "teste",
+"cidade": "teste",
+"cep": "00000000",
+"tem_piscina": "true,
+"academia":"false"
 }
 ```
 
@@ -67,15 +65,13 @@ Nesta aplicação é possível cadastrar, listar, atualizar e deletar franquias.
 
 ```javascript
 {
-"primeiroNome": "Teste",
-"sobrenome": "Atualizado",
-"cpf": "64340335898",
-"email": "testeatualizado@email.com",
-"telefone": "16912345678",
-"quarto": 150,
-"formaPagamento": "dinheiro",
-"checkIn": "22/11/2022",
-"checkOut": "23/11/2022"
+"gestor": "Teste",
+"endereco": "Teste",
+"estado": "teste",
+"cidade": "teste",
+"cep": "00000000",
+"tem_piscina": "true,
+"academia":"false"
 }
 ```
 
