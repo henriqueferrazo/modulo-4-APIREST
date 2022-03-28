@@ -42,7 +42,7 @@ Nesta aplicação é possível cadastrar, listar, atualizar e deletar franquias.
 
 <b>[GET] </b> /franquias - A rota deve exibir todos os franquias cadastrados.<br>
 
-<b>[GET] </b> /franquias/:id - A rota deve listar um franquias baseado em seu ID.<br>
+<b>[GET] </b> /franquias/id - A rota deve listar um franquias baseado em seu ID.<br>
 
 <b>[POST] </b> /franquias/registrar - A rota deve cadastrar uma franquia com as informações passadas no body da requisição.<br>
 
@@ -58,7 +58,7 @@ Nesta aplicação é possível cadastrar, listar, atualizar e deletar franquias.
 }
 ```
 
-<b>[PATCH] </b> /franquias/:id - A rota deve atualizar um cliente com as informações passadas no body da requisição. Caso necessário apenas uma informação pode ser atualizada por vez.<br>
+<b>[PATCH] </b> /franquias/id - A rota deve atualizar um cliente com as informações passadas no body da requisição. Caso necessário apenas uma informação pode ser atualizada por vez.<br>
 
 ```javascript
 {
@@ -72,14 +72,14 @@ Nesta aplicação é possível cadastrar, listar, atualizar e deletar franquias.
 }
 ```
 
-<b>[DELETE] </b> /franquias/:id - A rota deve deletar uma franquia baseado em seu ID.<br>
+<b>[DELETE] </b> /franquias/id - A rota deve deletar uma franquia baseado em seu ID.<br>
 
 # Validação de dados
  Foi adicionada as seguintes validações para os dados recebidos nas requisições: <br><br>
  <b>[POST] </b> /franquias/registrar <br>
    - Todos os campos precisam ser uma string
 
- <b>[PATCH] </b> /franquias/:id
+ <b>[PATCH] </b> /franquias/id
    - Todos os campos podem ser atualizados ao mesmo tempo, bem como um campo de cada vez.
    - Todos os campos devem ser uma string.
  
