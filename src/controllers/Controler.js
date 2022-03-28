@@ -102,7 +102,7 @@ class FranquiasController {
         if (!franquias) {
             return res.status(401).json({
                 status: 401,
-                message: 'Franquia não encontrado'
+                message: 'Franquia não encontrada'
             })
         }
         const novosDados = {
