@@ -24,7 +24,7 @@ class FranquiasController {
             if (!franquias) {
                 return res.status(401).json({
                     status: 401,
-                    message: 'Cliente não encontrado!'
+                    message: 'Franquia não encontrada!'
                 })
             }
 
@@ -56,7 +56,7 @@ class FranquiasController {
             ) {
             return res.status(401).json({
                 status: 401,
-                message: 'Todos os campos precisam ser preenchidos!'
+                message: 'Todos os campos precisam ser preenchidos corretamentes!'
             })
         }
         const franquiasExists = await franquiasModels.findOne({ where: { cep : cep } })
@@ -64,7 +64,7 @@ class FranquiasController {
         if (franquiasExists) {
             return res.status(401).json({
                 status: 401,
-                message: 'Endereço ja informado!'
+                message: 'CEP ja informado!'
             })
         }
         const newFranquias = {
@@ -80,7 +80,7 @@ class FranquiasController {
             await franquiasModels.create(newFranquias)
             res
                 .status(201)
-                .json({ status: 201, message: 'Franquias cadastradas com sucesso!' })
+                .json({ status: 201, message: 'Franquia cadastrada com sucesso!' })
         } catch (error) {
             return res.status(401).json({ status: 401, message: error.message })
         }
@@ -130,20 +130,20 @@ class FranquiasController {
 static async deleteById(req, res) {
     const { id } = req.params
 
-    const cliente = await franquiasModels.findOne({ where: { id: id }, raw: true })
+    const franquias = await franquiasModels.findOne({ where: { id: id }, raw: true })
 
     if (!franquias) {
         return res.status(401).json({
             status: 401,
-            message: 'Cliente não encontrado!'
+            message: 'Franquia não encontrada!'
         })
     }
 
     try {
-        await franquiasModels.destroy({ where: cliente })
+        await franquiasModels.destroy({ where: franquias })
         return res
             .status(200)
-            .json({ status: 200, message: 'Cliente deletado com sucesso!' })
+            .json({ status: 200, message: 'Franquia deletada com sucesso!' })
     } catch (error) {
         return res
             .status(401)

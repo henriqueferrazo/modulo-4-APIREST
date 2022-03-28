@@ -53,8 +53,8 @@ Nesta aplicação é possível cadastrar, listar, atualizar e deletar franquias.
 "estado": "teste",
 "cidade": "teste",
 "cep": "00000000",
-"tem_piscina": "true,
-"tem_academia":"false"
+"tem_piscina": "sim",
+"tem_academia":"nao"
 }
 ```
 
@@ -67,8 +67,8 @@ Nesta aplicação é possível cadastrar, listar, atualizar e deletar franquias.
 "estado": "teste",
 "cidade": "teste",
 "cep": "00000000",
-"tem_piscina": "true,
-"tem_academia":"false"
+"tem_piscina": "sim",
+"tem_academia":"nao"
 }
 ```
 
